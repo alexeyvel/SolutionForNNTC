@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolutionForNNTC", "SolutionForNNTC.csproj", "{EEC1EF7A-C4F4-4E93-A4B8-66D3B10D9B3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEC1EF7A-C4F4-4E93-A4B8-66D3B10D9B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC1EF7A-C4F4-4E93-A4B8-66D3B10D9B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC1EF7A-C4F4-4E93-A4B8-66D3B10D9B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC1EF7A-C4F4-4E93-A4B8-66D3B10D9B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEA905A6-0511-44E6-B7E8-E5DD70C9B278}
+	EndGlobalSection
+EndGlobal
