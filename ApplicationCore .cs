@@ -72,7 +72,8 @@ namespace SolutionForNNTC
 
             while (IsRun)
             {
-                _ = InputHandler.CommandHandlerAsync();
+                //_ = InputHandler.CommandHandlerAsync();
+                InputHandler.CommandHandler(Console.ReadLine());
             }
         }
 

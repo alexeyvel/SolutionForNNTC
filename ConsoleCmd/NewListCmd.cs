@@ -7,7 +7,7 @@ namespace SolutionForNNTC.ConsoleCmd
     {
 		private ApplicationCore _application;
         private int defaultSize = 10;
-        private int maxSize = Console.BufferHeight - 1;
+        private int maxSize = 15;
 
         public event Action<List<BornInThe21stCentury>> CreateCopy;
         public static event Action<string, ConsoleColor> Print;
@@ -46,7 +46,7 @@ namespace SolutionForNNTC.ConsoleCmd
             {
                 var item = _application.EntityCreator.CreateEntity();
                 _application.ItemList.Add(item);
-                Print?.Invoke($"{i+1}\t" + item.ToString(), ConsoleColor.White);
+                Print?.Invoke(item.ToString(), ConsoleColor.White);
             }
         }
     }

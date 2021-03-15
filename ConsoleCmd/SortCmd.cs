@@ -6,8 +6,7 @@ namespace SolutionForNNTC.ConsoleCmd
 	class SortCmd : IConsoleCommand
     {
         private ApplicationCore _application;
-        private static string _inputFailMessage = "Команда не распознана. Попробуйте ввести команду заново.\nДля отоброжения доступных команд введите help и нажмите enter";
-        public static event Action<string, ConsoleColor> Print;
+            
         private Dictionary<string, Comparison<BornInThe21stCentury>> _condition;
 
         private Comparison<BornInThe21stCentury> _descSortDate = (x, y) => y.Birthday.CompareTo(x.Birthday);
@@ -17,6 +16,8 @@ namespace SolutionForNNTC.ConsoleCmd
         private Comparison<BornInThe21stCentury> _descSortName = (x, y) => y.Name.CompareTo(x.Name);
 
         private Comparison<BornInThe21stCentury> _ascSortName = (x, y) => x.Name.CompareTo(y.Name);
+
+        public static event Action<string, ConsoleColor> Print;
 
         public string Description => ": сортировка списка согласно выбранного условия, см. пример ниже:\n" +
                                          $"{"sort -ascd сортирует список по возрастанию даты рождения",78}\n" +
@@ -50,7 +51,7 @@ namespace SolutionForNNTC.ConsoleCmd
             }
             else
             {
-                Print?.Invoke(_inputFailMessage, ConsoleColor.Yellow);
+                Print?.Invoke(InputHandler.ArgsFailMessage, InputHandler.FailMessageColor);
             }
         }
 

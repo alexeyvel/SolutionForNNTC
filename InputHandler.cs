@@ -17,7 +17,7 @@ namespace SolutionForNNTC
         {
             await Task.Run(() => CommandHandler(Console.ReadLine().ToLower()));
         }
-        private static void CommandHandler(string cmdLine)
+        public static void CommandHandler(string cmdLine)
         {
             if (TryParseArgs(cmdLine, out string command, out string arg))
             {
